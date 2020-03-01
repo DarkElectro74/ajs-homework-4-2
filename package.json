@@ -1,0 +1,46 @@
+{
+  "name": "syntactic-constructions2",
+  "version": "1.0.0",
+  "description": "Syntactic-constructions task 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "babel src -d dist",
+    "lint": "eslint .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PGVlasov/Syntactic-constructions2.git"
+  },
+  "keywords": [
+    "task"
+  ],
+  "author": "PGVlasov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PGVlasov/Syntactic-constructions2/issues"
+  },
+  "homepage": "https://github.com/PGVlasov/Syntactic-constructions2#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "core-js": "^3.4.7"
+  }
+}
